@@ -69,13 +69,12 @@ for (let i = 0; i < teamMembers.length; i++) {
   const {name, role, email, img} = currentMember
  // console.log(name,role,email, img);
 // Qui creiamo una una variabile che crerà Div nel documento html
-  const newCard = document.createElement("div")
-  
+  const newCard = document.createElement("div");
 
   //Con questo nuovo oggetto possiamo inserire il cio che vogliamo nel Div
   newCard.innerHTML = `
-    <div class="card bg-dark text white shadow-sm border-0 flex-row align-items-center p-2">
-          <img src="${img}" class="img-fluid rounded-start"  alt="${name}">
+    <div class="card bg-dark text-white shadow-sm border-0 flex-row align-items-center ps-2">
+          <img src="${img}" class="img-fluid rounded-start"  alt="${name}" style="width: 100px; height: 100px; object-fit: cover;>
             <div class="card-body ps-3">
                 <h4 class"card-title mb-1 fw-bold">${name}</h4>
                 <p class"card-text mb-1">${role}</p>
