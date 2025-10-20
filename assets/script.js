@@ -50,5 +50,19 @@ const teamMembers = [
   }
 ];
 
+//Analisi:
+
+// Ho già l'array teamMembers con 6 oggetti, ognuno ha: name, role, email, img
+
+//Prendo il contenitore della pagina dove mettere le card
+
+// Cre un ciclo su tutti i membri dell'array teamMebers
+
+//Salvo in na variabile l'oggeto corrente(cioè il membro del team)
+
+//Creo un nuovo elemento DIV che rappresentà la card 
+
+
+  
 
 
