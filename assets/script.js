@@ -62,18 +62,30 @@ for (let i = 0; i < teamMembers.length; i++) {
   const currentMember = teamMembers[i];
   const {name, role, email, img} = currentMember
   console.log(name,role,email, img);
+// Qui creiamo una una variabile che crerà
+  const newDiv = document.createElement("div")
+  
 
+  //Con questo nuovo oggetto possiamo inserire il cio che vogliamo nel Div
+  newDiv.innerHTML = `
+      <div class="container">
+                  <div id="team-container" class="row row-col-1 row-cols-md-3 g-4">
+                      <div class="col">
+                          <img class="card-img-top" src="./assets/img/female1.png" alt="">
+                          <div class="card-body">
+                              <h3>Name</h3>
+                              <div>Role</div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+    
+  `
+container.append(newDiv);
   
 }
 
 
-//Creo un nuovo elemento DIV che rappresentà la card 
-const markupString = `
-  
-  
-  
-  
-`
 
 
   
