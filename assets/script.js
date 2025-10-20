@@ -62,17 +62,18 @@ for (let i = 0; i < teamMembers.length; i++) {
   const currentMember = teamMembers[i];
   const {name, role, email, img} = currentMember
   console.log(name,role,email, img);
-  //Creo un nuovo elemento DIV che rappresentà la card 
-  const markupString = `
+
   
-  
-  
-  
-  `
 }
 
 
-
+//Creo un nuovo elemento DIV che rappresentà la card 
+const markupString = `
+  
+  
+  
+  
+`
 
 
   
