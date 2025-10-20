@@ -47,6 +47,12 @@ const teamMembers = [
     role: "Analyst",
     email: "danielaamet@team.com",
     img: "./assets/img/female3.png"
+  },
+  {
+    name: "John Vital",
+    role: "New Entry",
+    email: "johnvital@team.com",
+    img: "./assets/img/male4.png"
   }
 ];
 
@@ -68,12 +74,12 @@ for (let i = 0; i < teamMembers.length; i++) {
 
   //Con questo nuovo oggetto possiamo inserire il cio che vogliamo nel Div
   newCard.innerHTML = `
-    <div class="card h100 shadow-sm border-0 text-center">
-          <img src="${img}" class="card-img-top"  alt="${name}">
-            <div class="card-body">
-                <h4 class"card-title mb-1">${name}</h4>
-                <p class"card-text mb-2">${role}</p>
-                <a class"text-decoration-none">${email}</a>
+    <div class="card bg-dark text white shadow-sm border-0 flex-row align-items-center p-2">
+          <img src="${img}" class="img-fluid rounded-start"  alt="${name}">
+            <div class="card-body ps-3">
+                <h4 class"card-title mb-1 fw-bold">${name}</h4>
+                <p class"card-text mb-1">${role}</p>
+                <a class"text-info text-decoration-none">${email}</a>
             </div>
         </div>
       </div>
