@@ -8,7 +8,7 @@
  **Bonus**
  
  - Rendere l’esercizio responsive, mandando a capo le card
- - Aggiungere un form di agginta membri che permetta di visualizzare il nuovo membro sulla pagina (usate una foto qualunque, anche vostra se volete sentirvi parte del team! 😀)
+ - Aggiungere un form di aggiunta membri che permetta di visualizzare il nuovo membro sulla pagina (usate una foto qualunque, anche vostra se volete sentirvi parte del team! 😀)
  
  */
 const teamMembers = [
@@ -54,13 +54,25 @@ const teamMembers = [
 
 // Ho già l'array teamMembers con 6 oggetti, ognuno ha: name, role, email, img
 
-//Prendo il contenitore della pagina dove mettere le card
-
+//Selezioniamo il contenitore della pagina dove mettere le card
+const container = document.getElementById('team-container');
 // Cre un ciclo su tutti i membri dell'array teamMebers
+for (let i = 0; i < teamMembers.length; i++) {
+  //Salvo in una variabile l'oggeto corrente(cioè il membro del team)
+  const currentMember = teamMembers[i];
+  const {name, role, email, img} = currentMember
+  console.log(name,role,email, img);
+  //Creo un nuovo elemento DIV che rappresentà la card 
+  const markupString = `
+  
+  
+  
+  
+  `
+}
 
-//Salvo in na variabile l'oggeto corrente(cioè il membro del team)
 
-//Creo un nuovo elemento DIV che rappresentà la card 
+
 
 
   
