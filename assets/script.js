@@ -61,8 +61,8 @@ for (let i = 0; i < teamMembers.length; i++) {
   //Salvo in una variabile l'oggeto corrente(cioè il membro del team)
   const currentMember = teamMembers[i];
   const {name, role, email, img} = currentMember
-  console.log(name,role,email, img);
-// Qui creiamo una una variabile che crerà
+ // console.log(name,role,email, img);
+// Qui creiamo una una variabile che crerà Div nel documento html
   const newDiv = document.createElement("div")
   
 
@@ -71,10 +71,11 @@ for (let i = 0; i < teamMembers.length; i++) {
       <div class="container">
                   <div id="team-container" class="row row-col-1 row-cols-md-3 g-4">
                       <div class="col">
-                          <img class="card-img-top" src="./assets/img/female1.png" alt="">
+                          <img class="card-img-top" src="${img}" alt="${name}">
                           <div class="card-body">
-                              <h3>Name</h3>
-                              <div>Role</div>
+                              <h3>${name}</h3>
+                              <div>${role}</div>
+                              <div>${email}</div>
                           </div>
                       </div>
                   </div>
@@ -83,7 +84,7 @@ for (let i = 0; i < teamMembers.length; i++) {
   `
 container.append(newDiv);
   
-}
+};
 
 
 
